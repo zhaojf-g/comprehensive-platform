@@ -25,6 +25,7 @@
 
     <modules>
         <module>comprehensive-member-provide</module>
+        <module>comprehensive-member-consume</module>
     </modules>
 
 

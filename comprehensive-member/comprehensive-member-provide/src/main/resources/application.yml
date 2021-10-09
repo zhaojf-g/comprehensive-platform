@@ -1,0 +1,20 @@
+server:
+  port: 22512
+nacos:
+  config:
+    server-addr: 49.232.89.51:8848
+    namespace: 5792f7b5-a856-4457-8c62-a46b2d7fb489
+dubbo:
+  registry:
+    address: nacos://49.232.89.51:8848
+  application:
+    name: member-provider
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.comprehensiveplatform.member.service
+spring:
+  main:
+    # ??Bean??????
+    allow-bean-definition-overriding: true
