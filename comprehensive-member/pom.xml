@@ -20,14 +20,25 @@
         <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-bom</artifactId>
+                <version>3.0.2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 
     <modules>
         <module>comprehensive-member-provide</module>
         <module>comprehensive-member-consume</module>
+        <module>comprehensive-member-api</module>
     </modules>
-
 
 
 </project>

@@ -1,8 +1,12 @@
 package com.comprehensiveplatform.member.service;
 
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 
-@Service
-public interface MemberServiceImpl {
-    public void test();
+@DubboService
+public class MemberServiceImpl implements MemberService {
+
+    @Override
+    public void test() {
+
+    }
 }
