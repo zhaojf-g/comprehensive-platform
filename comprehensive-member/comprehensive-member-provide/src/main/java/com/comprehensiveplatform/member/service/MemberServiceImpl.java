@@ -7,6 +7,6 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public void test() {
-
+        System.out.println("123");
     }
 }
